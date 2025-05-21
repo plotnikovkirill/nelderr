@@ -6,7 +6,7 @@
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows)](https://www.microsoft.com/)
 [![Tests](https://img.shields.io/badge/Тесты-Passed-brightgreen)](https://github.com/google/googletest)
 
-<img src="docs/screenshot.png" width="600" alt="Скриншот интерфейса">
+<img src="screenshot.png" width="600" alt="Скриншот интерфейса">
 
 ---
 
