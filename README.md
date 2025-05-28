@@ -6,7 +6,7 @@
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows)](https://www.microsoft.com/)
 [![Tests](https://img.shields.io/badge/Тесты-Passed-brightgreen)](https://github.com/google/googletest)
 
-<img src="screenshot.png" width="600" alt="Скриншот интерфейса">
+<img src="jeje.png" width="600" alt="Скриншот интерфейса">
 
 ---
 
@@ -27,8 +27,11 @@ C:\Projects\NelderMead\
 ### Шаг 2:**Соберите проект**:
    - Откройте файл `NelderMeadOptimizer.sln` из папки `build` в Visual Studio.
    - В меню выберите: `Сборка → Собрать решение`.
-
-
+### Шаг 3: **Qt**
+   - Откройте Qt-creator
+   - Выберете скачанный проект("CmakeLists.txt")
+   - Build -> Run (Ctrl + R)
+     
 ## 🧪 Тестирование (для разработчиков)
 
 1. **Запуск тестов**:
