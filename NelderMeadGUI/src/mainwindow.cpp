@@ -4,6 +4,11 @@
 #include <QDebug>
 #include <QDoubleValidator>
 #include <QIntValidator>
+// В mainwindow.cpp перед #include "exprtk.hpp"
+#define exprtk_disable_exceptions
+#define exprtk_disable_rtti
+#define exprtk_disable_caseinsensitivity
+#include "../exprtk-master/exprtk.hpp"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -52,9 +57,37 @@ bool MainWindow::parseInput(QVector<double>& initialPoint, NelderMeadParams& par
 
     return true;
 }
+static QString currentExpression;
+double evaluateExpression(double* x, const QString& expr){
+    typedef exprtk::symbol_table<double> symbol_table_t;
+    typedef exprtk::expression<double> expression_t;
+    typedef exprtk::parser<double> parser_t;
 
+    symbol_table_t symbol_table;
+    symbol_table.add_variable("x", x[0]);
+    symbol_table.add_variable("y", x[1]);
+
+    expression_t expression;
+    expression.register_symbol_table(symbol_table);
+
+    parser_t parser;
+    bool compilation_success = parser.compile(expr.toStdString(), expression);
+    if(compilation_success) {
+        return expression.value();
+    } else {
+        // Обработка ошибки
+        qDebug() << "Expression error:" << parser.error().c_str();
+        return std::numeric_limits<double>::quiet_NaN();
+    }
+}
 void MainWindow::on_pushButtonOptimize_clicked()
 {
+    currentExpression = ui->functionEdit->toPlainText();
+
+    auto objectiveFunc = [](double* x) -> double {
+        return evaluateExpression(x, currentExpression);
+    };
+
     QVector<double> initialPoint;
     NelderMeadParams params;
 
@@ -64,9 +97,9 @@ void MainWindow::on_pushButtonOptimize_clicked()
     }
 
     // Целевая функция (пример)
-    auto objectiveFunc = [](double* x) -> double {
-        return x[0]*x[0] + x[1]*x[1]; // Можно сделать редактируемой
-    };
+    // auto objectiveFunc = [](double* x) -> double {
+    //     return x[0]*x[0] + x[1]*x[1]; // Можно сделать редактируемой
+    // };
 
     // Выделение памяти для результата
     double* result = new double[initialPoint.size()];
@@ -89,3 +122,4 @@ void MainWindow::on_pushButtonOptimize_clicked()
 
     delete[] result;
 }
+

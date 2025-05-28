@@ -16,6 +16,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
@@ -31,6 +32,7 @@ public:
     QGroupBox *groupBoxInput;
     QGridLayout *gridLayout;
     QLabel *labelInitialPoint;
+    QPlainTextEdit *functionEdit;
     QLineEdit *lineEditInitialPoint;
     QLabel *labelAlpha;
     QLineEdit *lineEditAlpha;
@@ -68,6 +70,11 @@ public:
         labelInitialPoint->setObjectName("labelInitialPoint");
 
         gridLayout->addWidget(labelInitialPoint, 0, 0, 1, 1);
+
+        functionEdit = new QPlainTextEdit(groupBoxInput);
+        functionEdit->setObjectName("functionEdit");
+
+        gridLayout->addWidget(functionEdit, 0, 0, 1, 1);
 
         lineEditInitialPoint = new QLineEdit(groupBoxInput);
         lineEditInitialPoint->setObjectName("lineEditInitialPoint");
@@ -176,6 +183,7 @@ public:
     {
         groupBoxInput->setTitle(QCoreApplication::translate("MainWindow", "\320\237\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213", nullptr));
         labelInitialPoint->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\207\320\260\320\273\321\214\320\275\320\260\321\217 \321\202\320\276\321\207\320\272\320\260:", nullptr));
+        functionEdit->setPlainText(QCoreApplication::translate("MainWindow", "x[0]*x[0] + x[1]*x[1];", nullptr));
         lineEditInitialPoint->setText(QCoreApplication::translate("MainWindow", "5.0, 5.0", nullptr));
         labelAlpha->setText(QCoreApplication::translate("MainWindow", "Alpha (\320\276\321\202\321\200\320\260\320\266\320\265\320\275\320\270\320\265):", nullptr));
         lineEditAlpha->setText(QCoreApplication::translate("MainWindow", "1.0", nullptr));

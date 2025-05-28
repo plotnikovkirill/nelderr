@@ -50,25 +50,25 @@ cmake_ninja_workdir = C$:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/build/
 build cmake_object_order_depends_target_NelderMeadGUI: phony || NelderMeadGUI_autogen NelderMeadGUI_autogen/mocs_compilation.cpp NelderMeadGUI_autogen/timestamp NelderMeadGUI_autogen_timestamp_deps
 
 build CMakeFiles/NelderMeadGUI.dir/NelderMeadGUI_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__NelderMeadGUI_unscanned_Debug C$:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/NelderMeadGUI_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_NelderMeadGUI
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG_OUTPUT -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\NelderMeadGUI.dir\NelderMeadGUI_autogen\mocs_compilation.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -Wa,-mbig-obj -ffunction-sections -fdata-sections -g -fdiagnostics-color=always -Os
   INCLUDES = -IC:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/NelderMeadGUI_autogen/include -IC:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/include -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\NelderMeadGUI.dir
   OBJECT_FILE_DIR = CMakeFiles\NelderMeadGUI.dir\NelderMeadGUI_autogen
 
 build CMakeFiles/NelderMeadGUI.dir/src/main.cpp.obj: CXX_COMPILER__NelderMeadGUI_unscanned_Debug C$:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/src/main.cpp || cmake_object_order_depends_target_NelderMeadGUI
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG_OUTPUT -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\NelderMeadGUI.dir\src\main.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -Wa,-mbig-obj -ffunction-sections -fdata-sections -g -fdiagnostics-color=always -Os
   INCLUDES = -IC:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/NelderMeadGUI_autogen/include -IC:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/include -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\NelderMeadGUI.dir
   OBJECT_FILE_DIR = CMakeFiles\NelderMeadGUI.dir\src
 
 build CMakeFiles/NelderMeadGUI.dir/src/mainwindow.cpp.obj: CXX_COMPILER__NelderMeadGUI_unscanned_Debug C$:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/src/mainwindow.cpp || cmake_object_order_depends_target_NelderMeadGUI
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG_OUTPUT -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\NelderMeadGUI.dir\src\mainwindow.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -Wa,-mbig-obj -ffunction-sections -fdata-sections -g -fdiagnostics-color=always -Os
   INCLUDES = -IC:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/NelderMeadGUI_autogen/include -IC:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/include -isystem C:/Qt/6.9.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.9.0/mingw_64/include -isystem C:/Qt/6.9.0/mingw_64/include/QtCore -isystem C:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.0/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\NelderMeadGUI.dir
   OBJECT_FILE_DIR = CMakeFiles\NelderMeadGUI.dir\src
@@ -82,7 +82,8 @@ build CMakeFiles/NelderMeadGUI.dir/src/mainwindow.cpp.obj: CXX_COMPILER__NelderM
 # Link the executable NelderMeadGUI.exe
 
 build NelderMeadGUI.exe: CXX_EXECUTABLE_LINKER__NelderMeadGUI_Debug CMakeFiles/NelderMeadGUI.dir/NelderMeadGUI_autogen/mocs_compilation.cpp.obj CMakeFiles/NelderMeadGUI.dir/src/main.cpp.obj CMakeFiles/NelderMeadGUI.dir/src/mainwindow.cpp.obj | C$:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a C$:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/lib/NelderMeadOptimizer.lib C$:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.9.0/mingw_64/lib/libQt6Core.a || NelderMeadGUI_autogen NelderMeadGUI_autogen_timestamp_deps
-  FLAGS = -DQT_QML_DEBUG -g
+  FLAGS = -DQT_QML_DEBUG -Wa,-mbig-obj -ffunction-sections -fdata-sections -g
+  LINK_FLAGS = -Wl,--gc-sections
   LINK_LIBRARIES = C:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a  C:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/lib/NelderMeadOptimizer.lib  C:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a  C:/Qt/6.9.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\NelderMeadGUI.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Kirill\source\repos\nelderr\NelderMeadGUI\build\Desktop_Qt_6_9_0_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/lib/NelderMeadOptimizer.dll C:/Users/Kirill/source/repos/nelderr/NelderMeadGUI/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug"
